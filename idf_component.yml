@@ -1,0 +1,41 @@
+## IDF Component Manager Manifest File
+version: "0.0.2"
+description: "ESP-IDF driver for MAX17048 battery fuel gauge with I2C master API support"
+url: https://github.com/npwh/esp-battery-max17048
+repository: https://github.com/npwh/esp-battery-max17048.git
+
+dependencies:
+  # ESP-IDF version constraints
+  idf: ">=5.0.0"
+
+targets:
+  - esp32
+  - esp32s2
+  - esp32s3
+  - esp32c2
+  - esp32c3
+  - esp32c6
+  - esp32h2
+
+tags:
+  - battery
+  - fuel-gauge
+  - i2c
+  - max17048
+  - power-management
+  - soc
+  - monitoring
+
+license: Apache-2.0
+
+files:
+  include:
+    - "**/*.h"
+    - "**/*.c"
+    - "README.md"
+    - "LICENSE"
+    - "CMakeLists.txt"
+  exclude:
+    - "examples/**"
+    - "test/**"
+    - "docs/**"

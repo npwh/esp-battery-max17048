@@ -1,0 +1,16 @@
+# Ignore distribution folder
+dist/
+
+# Ignore build artifacts
+*.o
+*.a
+*.so
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore temporary files
+*.tmp
+*.swp
+*~
